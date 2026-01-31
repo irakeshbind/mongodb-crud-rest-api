@@ -5,6 +5,19 @@ const app= express();
 const studentRoutes= require('./routes/student.js');
 const facultyRoutes =require('./routes/faculty.js')
 
+// import mongoose
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://rakesh:123@cluster0.lydcv.mongodb.net/')
+
+mongoose.connection.on('error',err=>{
+    console.log('connection failed')
+})
+
+mongoose.connection.on('connected',connected=>{
+    console.log('connected databaase')
+})
+
+
 
 // http://localhost:3000
 // app.use((req,res,next)=>{
