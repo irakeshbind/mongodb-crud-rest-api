@@ -19,4 +19,8 @@ router.post('/faculty',(req,res,nex)=>{
     })
 })
 
+
+
+
+
 module.exports=router;
