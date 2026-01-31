@@ -19,7 +19,7 @@ const mongoose = require("mongoose");
 //     console.log('connected databaase')
 // })
 
-// databse connection method 3
+// databse connection method 2
 // mongoose.connect("mongodb+srv://rakesh:123@cluster0.lydcv.mongodb.net/");
 // try {
 //   console.log("connected databaase");
